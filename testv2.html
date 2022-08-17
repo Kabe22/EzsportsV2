@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> EZSPORTS v.2 </title>
+    <h1 class="titrebouge">
+    EzSports v.2
+    </h1>
+    </head>
+<style>
+body{
+  background-color: lightblue;
+  max-width: 100%;
+  max-height: 100%;
+}
+h1{
+border: 2px solid tomato;
+text-align: center;
+background-color: white;
+width: 80%;
+margin: auto;
+font-size: 5vw;
+}
+.titrebouge {
+  position: relative;
+  animation-name: bouge;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-timing-function: ease;
+}
+
+@keyframes bouge {
+  0%   { left: 0px; top: 0px; }
+  50%  { left: 200px; top: 0px; }
+  70% { left:  0px; top: 0px; }
+  75% { left: 30px; top: 0px; }
+  80% { left: 0px; top: 0px; }
+  90% { left: 15px; top: 0px; }
+  100% { left: 0px; top: 0px; }
+  }
+  
+p{
+  font-size: 3vw;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+.hide{
+  display: none;
+}
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-child{
+    flex: 1 1 auto;
+      padding: 5px;
+      }
+    
+.logo{
+  max-width: 25vw;
+  max-height: 25vw;
+  cursor: crosshair;
+}
+.petit-logo{
+  max-width: 15vw;
+  max-height: 15vw;
+  cursor: crosshair;
+}
+</style>
+<script>
+
+function kc1() {
+  var button = document.getElementById("kc");
+  button.classList.toggle("hide");
+}
+function kclol() {
+  var button = document.getElementById("kc_lol");
+  button.classList.toggle("hide");
+}
+function kcvalo() {
+  var button = document.getElementById("kc_valo");
+  button.classList.toggle("hide");
+}
+function kcrl() {
+  var button = document.getElementById("kc_rl");
+  button.classList.toggle("hide");
+}
+
+function mdr1() {
+  var button = document.getElementById("mdr");
+  button.classList.toggle("hide");
+}
+function mdrvalo() {
+  var button = document.getElementById("mdr_valo");
+  button.classList.toggle("hide");
+}
+
+function vita1() {
+  var button = document.getElementById("vita");
+  button.classList.toggle("hide");
+}
+function vitalol() {
+  var button = document.getElementById("vita_lol");
+  button.classList.toggle("hide");
+}
+function vitavalo() {
+  var button = document.getElementById("vita_valo");
+  button.classList.toggle("hide");
+}
+
+function owc1() {
+  var button = document.getElementById("owc");
+  button.classList.toggle("hide");
+}
+function peps() {
+  var button = document.getElementById("peps");
+  button.classList.toggle("hide");
+}
+function owclive() {
+  var button = document.getElementById("owc_live");
+  button.classList.toggle("hide");
+}
+
+function owl1() {
+  var button = document.getElementById("owl");
+  button.classList.toggle("hide");
+}
+
+src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+</script>
+<body>
+<p>
+Grâce à EzSports V.2 retrouvez facilement tous les liens pour vos équipes FR préférées!
+</p>
+
+<div class="flex-container"> <!-- début conteneur -->
+<div class="flex-child"> <!-- div KC -->
+<button onclick="kc1()"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Karmine_Corp_logo.svg/640px-Karmine_Corp_logo.svg.png" alt="kc logo" class="logo"> 
+        <br>Kcorp </button>
+        <div id="kc" class="hide" >
+      <button onclick="kclol()"> <img src="https://logo-marque.com/wp-content/uploads/2020/11/League-of-Legends-Embleme.png" alt="lol logo" class="petit-logo">  </button>
+      <p id="kc_lol" class="hide">
+        <a href='https://lollfl.com/tournois/5666501495920451584/equipes/5666507185211596814'>
+          <button>  planning </button>
+        </a>
+        <a href='https://lollfl.com/resultats#:~:text=5-,KARMINE%20CORP,-13'>
+          <button class="GFG" syle.display='none'>
+            classement
+          </button>
+        </a>
+        </p>
+  <p>
+     <button onclick="kcvalo()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/2560px-Valorant_logo_-_pink_color_version.svg.png" alt="valorant logo" class="petit-logo"> </button>
+ </p>
+      <p id=kc_valo class="hide">
+        <a href='https://liquipedia.net/valorant/Karmine_Corp#:~:text=Fullscreen-,Upcoming%20Matches,-No%20Upcoming%20Matches'>
+          <button class="GFG" syle.display='none'>
+            planning
+          </button>
+        </a>
+        <a href='https://liquipedia.net/valorant/VRL/2022/France/Stage_2#:~:text=3.-,Karmine%20Corp,-12%2D6'>
+          <button class="GFG" syle.display='none'>
+            classement
+          </button>
+        </a>
+      </p>
+       <p> <button onclick="kcrl()"><img src="https://logos-world.net/wp-content/uploads/2020/11/Rocket-League-Emblem.png" alt="rocketleague logo" class="petit-logo"> </button>
+ </p>
+      <p id=kc_rl class="hide">
+        <a href='https://liquipedia.net/rocketleague/Karmine_Corp#:~:text=Fullscreen-,Upcoming%20Matches,-Karmine%20Corp%2C%20previously'>
+          <button class="GFG" syle.display='none'>
+            planning
+          </button>
+        </a>
+        <a href='https://liquipedia.net/rocketleague/Rocket_League_Championship_Series/Season_X/Championships/Europe'>
+          <button class="GFG" syle.display='none'>
+            classement
+          </button>
+        </a>
+      </p>
+</div>
+</div> <!-- div KC -->
+<div class="flex-child"> <!-- div MDR -->
+<button onclick="mdr1()"> <img src="https://files.tips.gg/static/image/teams/mandatory-valorant.png" alt="mdr logo" class="logo" > <br> MDR</button>
+<div id="mdr" class="hide"> 
+<button onclick="mdrvalo()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/2560px-Valorant_logo_-_pink_color_version.svg.png" alt="valorant logo" class="petit-logo"> </button>  
+
+      <p id=mdr_valo class="hide">
+        <a href='https://www.mandatory.gg/valorant/news/esport/vrl/suivez-le-premier-match-de-la-team-mandatory/'>
+          <button class="GFG" syle.display='none'>
+            planning
+          </button>
+        </a>
+        <a href='https://www.mandatory.gg/valorant/news/esport/vrl/vrl-france-2022-tableau-des-scores-et-resultats/'>
+          <button class="GFG" syle.display='none'>
+            classement
+          </button>
+        </a>
+      </p>
+</div> <!-- fin mdr -->
+</div> <!-- div mdr -->
+<div class="flex-child"> <!-- div vita -->
+<button onclick="vita1()"><img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Logo_Team_Vitality_2020.png" alt="vita logo" class="logo" > <br> VITA </button>
+<div id="vita" class="hide">
+<button onclick="vitalol()"><img src="https://logo-marque.com/wp-content/uploads/2020/11/League-of-Legends-Embleme.png" alt="lol logo" class="petit-logo"> </button>
+      <p id="vita_lol" class="hide">
+        <a href='https://lollfl.com/tournois/5666501495920451584/equipes/5666507185211596821'>
+          <button class="GFG" syle.display='none'>
+            planning
+          </button>
+        </a>
+        <a href='https://lollfl.com/resultats'>
+          <button class="GFG" syle.display='none'>
+            classement
+          </button>
+        </a>
+      </p>
+      <p>
+        <button onclick="vitavalo()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/2560px-Valorant_logo_-_pink_color_version.svg.png" alt="valorant logo" class="petit-logo"> </button>
+
+      </p>
+      <p id=vita_valo class="hide">
+        <a href='https://www.vrlfr.gg/fr/teams/29406-team-vitality'>
+          <button class="GFG" syle.display='none'>
+            planning
+          </button>
+        </a>
+        <a href='https://liquipedia.net/valorant/VRL/2022/France/Stage_2#:~:text=%5Bedit%5D-,Standings,-1.'>
+          <button class="GFG" syle.display='none'>
+            classement
+            </button> </a>
+</div>
+</div> <!-- fin div vita -->
+<div class="flex-child"> <!-- div contenders -->
+<button onclick="owc1()"><img src="https://images.blz-contentstack.com/v3/assets/blt321317473c90505c/blte21c71eda87647f6/5e8d22078d83401be1197798/logo.svg?auto=webp" alt="owc logo" class="logo" > <br>Contenders </button>
+<div id="owc" class="hide">
+<p id="owc_live">
+        <a href='https://overwatchleague.com/fr-fr/contenders'>
+          <button syle.display='none'> <img src="https://images.emojiterra.com/google/android-10/512px/1f534.png" alt="live logo" class="petit-logo">
+          </button>
+        </a>
+        </p>
+<p>
+  <button onclick="peps()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuZX-WriTPMz-DPsC2tH2BT_0S0IoHY8B2Pw&usqp=CAU" alt="peps logo" class="petit-logo"> </button>
+      </p>
+      <p id="peps" class="hide">
+        <a href='https://liquipedia.net/overwatch/Team_Peps'>
+          <button syle.display='none'>
+            planning
+          </button>
+        </a>
+        <a href='https://liquipedia.net/overwatch/Team_Peps'>
+          <button syle.display='none'>
+            classement
+          </button>
+        </a>
+      </p>
+</div>
+</div> <!-- fin div contenders -->
+<div class="flex-child"> <!-- div owl -->
+<button onclick="owl1()"><img src="https://upload.wikimedia.org/wikipedia/fr/archive/7/77/20180810144039%21Overwatch_League_Logo.png" alt="owl logo" class="logo" ><br> OWL</button>
+<div>
+ <p id="owl" class="hide">
+        <a href='https://overwatchleague.com/fr-fr/schedule?stage=regular_season&week=10&team=allteams'>
+          <button class="GFG" syle.display='none'>
+            planning
+          </button>
+        </a>
+        <a href='https://overwatchleague.com/fr-fr/standings'>
+          <button class="GFG" syle.display='none'>
+            classement
+          </button>
+        </a>
+        <a href='https://overwatchleague.com/fr-fr'>
+          <button class="GFG" syle.display='none'>
+            live
+          </button>
+        </a>
+      </p>
+</div>
+</div><!-- fin div owl -->
+</div> <!-- fin conteneur -->
+
+</body>    
+    </html>
